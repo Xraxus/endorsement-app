@@ -145,22 +145,22 @@ p {
 }
 
 @media screen and (min-width: 600px) {
-  .container{
+  .container {
     width: 70vw;
     align-items: center;
   }
 
-  .form-wrapper{
+  .form-wrapper {
     width: 400px;
   }
 
-  #endorsements-wrapper{
+  #endorsements-wrapper {
     flex-flow: row-reverse wrap-reverse;
     justify-content: center;
     gap: 10px;
     width: 100%;
   }
-  
+
   #endorsements-wrapper > div {
     flex-basis: calc((100% / 2) - 50px);
     flex-grow: 1;
@@ -169,9 +169,8 @@ p {
 }
 
 @media screen and (min-width: 900px) {
-    #endorsements-wrapper > div {
+  #endorsements-wrapper > div {
     flex-basis: calc((100% / 3) - 50px);
     max-width: calc(100% / 2);
   }
-  
 }
