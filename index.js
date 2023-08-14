@@ -27,14 +27,17 @@ publishBtnEl.addEventListener("click", function () {
   let fromInput = fromInputEl.value;
   let toInput = toInputEl.value;
 
-  push(endorsementsInDB, {
-    text: textInput,
-    from: fromInput,
-    to: toInput,
-    likes: 0,
-  });
-
-  clearInputs();
+  if (textInput != "" && fromInput != "" && toInput != "") {
+    push(endorsementsInDB, {
+      text: textInput,
+      from: fromInput,
+      to: toInput,
+      likes: 0,
+    });
+    clearInputs();
+  } else {
+    alert("Fill in all the fields!");
+  }
 });
 
 onValue(endorsementsInDB, function (snapshot) {
